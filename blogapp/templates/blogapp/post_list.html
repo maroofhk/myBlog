@@ -1,0 +1,14 @@
+{% extends 'blogapp/base.html' %}
+
+{% block content %}
+    <!--<p>Here are the posts:</p>-->
+    <!--{% for post in posts %}-->
+    <!--    <h2>{{ post.title }}</h2>-->
+    <!--    <p>{{ post.text }}</p>-->
+    <!--{% endfor %}-->
+    
+    <p>Here are the posts:</p>
+    {% for post in posts %}
+        <h3><a href='/post/{{ post.id }}/'>{{ post.title }}</a></h3>
+    {% endfor %}
+{% endblock content %}
